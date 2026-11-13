@@ -7,10 +7,9 @@ sites:
     url: https://dirt-map.vercel.app
   - name: ENERQ
     url: https://www.enerq.es
-  # Enable after the first production deployment. Vercel Deployment Protection
-  # must be "Standard Protection", or this check gets HTTP 401.
-  # - name: Life Dashboard
-  #   url: https://life-dashboard-two-peach.vercel.app/login
+  # /login is public; the other pages redirect to it when signed out.
+  - name: Life Dashboard
+    url: https://life-dashboard-two-peach.vercel.app/login
   # Add the production URL when SPADEWORK is live.
   # - name: SPADEWORK
   #   url: https://example.com
