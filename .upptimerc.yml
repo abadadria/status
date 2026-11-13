@@ -1,0 +1,32 @@
+# Upptime configuration. Docs: https://upptime.js.org/docs/configuration
+owner: abadadria
+repo: status
+
+sites:
+  - name: Dirt Map
+    url: https://dirt-map.vercel.app
+  - name: ENERQ
+    url: https://www.enerq.es
+  # Enable after the first production deployment. Vercel Deployment Protection
+  # must be "Standard Protection", or this check gets HTTP 401.
+  # - name: Life Dashboard
+  #   url: https://life-dashboard-two-peach.vercel.app/login
+  # Add the production URL when SPADEWORK is live.
+  # - name: SPADEWORK
+  #   url: https://example.com
+
+# Checks run every 5 minutes (GitHub Actions cron is best effort).
+workflowSchedule:
+  uptime: "*/5 * * * *"
+
+status-website:
+  # No custom domain: the page is at https://abadadria.github.io/status
+  baseUrl: /status
+  name: Adrià's apps
+  introTitle: "Status of my apps"
+  introMessage: Uptime checks every 5 minutes, powered by [Upptime](https://upptime.js.org).
+  navbar:
+    - title: Status
+      href: /status/
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
