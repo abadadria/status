@@ -1,0 +1,30 @@
+# Upptime configuration. Docs: https://upptime.js.org/docs/configuration
+owner: abadadria
+repo: status
+
+sites:
+  - name: Dirt Map
+    url: https://dirt-map.vercel.app
+  - name: ENERQ
+    url: https://www.enerq.es
+  # /login is public; the other pages redirect to it when signed out.
+  - name: Life Dashboard
+    url: https://life-dashboard-two-peach.vercel.app/login
+  - name: SPADEWORK
+    url: https://spadeworkapp.com
+
+# Checks run every 5 minutes (GitHub Actions cron is best effort).
+workflowSchedule:
+  uptime: "*/5 * * * *"
+
+status-website:
+  # No custom domain: the page is at https://abadadria.github.io/status
+  baseUrl: /status
+  name: Adrià's apps
+  introTitle: "Status of my apps"
+  introMessage: Uptime checks every 5 minutes, powered by [Upptime](https://upptime.js.org).
+  navbar:
+    - title: Status
+      href: /status/
+    - title: GitHub
+      href: https://github.com/$OWNER/$REPO
